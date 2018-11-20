@@ -207,7 +207,6 @@ footer a {
     display: block;
   }
   .copyright, .impressum {
-    margin: 0 auto;
     text-align: center;
   }
 }
