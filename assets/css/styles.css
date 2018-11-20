@@ -38,6 +38,24 @@ nav a {
   text-decoration: none;
   color: var(--header-fg);
 }
+nav .dropdown: {
+  padding: 20px;
+}
+nav .dropmenu {
+  display: none;
+}
+nav .dropmenu:active {
+  display: flex;
+}
+nav .dropdown:hover .dropmenu {
+  display: flex;
+}
+.dropmenu {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 85%;
+}
 main {
   width: 1000px;
   margin: 0 auto;
@@ -65,4 +83,6 @@ footer a {
 .dropmenu {
   display: none;
   background-color: var(--menu-bg);
+}
+.dropdown:hover, .dropmenu:hover {
 }
