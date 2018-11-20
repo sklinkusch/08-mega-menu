@@ -24,11 +24,11 @@ header {
   align-items: center;
 }
 header h1 {
-  flex: 0 0 20%;
+  flex: 0 0 12ch;
   text-align: center;
 }
 header nav {
-  flex: 0 0 50%;
+  flex: 0 0 50ch;
 }
 nav li {
   display: inline-block;
@@ -67,7 +67,7 @@ nav .dropdown:hover .dropmenu {
   flex: 0 0 50%;
   background-image: url(../img/photo-1542295520-42801e81eba7.jpeg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .dropmenu li {
   display: block;
@@ -79,7 +79,7 @@ nav .dropdown:hover .dropmenu {
   color: var(--menu-fg);
 }
 main {
-  width: 1000px;
+  width: 750px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -101,4 +101,58 @@ footer .impressum {
 footer a {
   text-decoration: none;
   color: var(--header-fg);
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 550px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  header h1 {
+    flex: 0 0 1.4em;
+  }
+  header > nav {
+    flex: 0 0 1.2em;
+  }
+  header > nav > ul > li {
+    display: block;
+  }
+  .dropmenu {
+    position: absolute;
+    top: 6.5rem;
+    left: 20px;
+    width: 85%;
+    background-color: var(--menu-bg);
+  }
+}
+@media screen and (max-width: 567px) {
+  main {
+    width: 90%;
+  }
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  header h1 {
+    flex: 0 0 1.4em;
+  }
+  header > nav {
+    flex: 0 0 1.2em;
+  }
+  header > nav > ul > li {
+    display: block;
+  }
+  .dropmenu {
+    position: absolute;
+    top: 6.5rem;
+    left: 20px;
+    width: 85%;
+    background-color: var(--menu-bg);
+  }
 }
