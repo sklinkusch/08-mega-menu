@@ -55,6 +55,16 @@ nav .dropdown:hover .dropmenu {
   top: 40px;
   left: 20px;
   width: 85%;
+  background-color: var(--menu-bg);
+}
+.dropmenu li {
+  display: block;
+  padding: 2rem 0 2rem 0;
+  list-style-type: none;
+}
+.dropmenu a {
+  text-decoration: none;
+  color: var(--menu-fg);
 }
 main {
   width: 1000px;
@@ -79,10 +89,4 @@ footer .impressum {
 footer a {
   text-decoration: none;
   color: var(--header-fg);
-}
-.dropmenu {
-  display: none;
-  background-color: var(--menu-bg);
-}
-.dropdown:hover, .dropmenu:hover {
 }
