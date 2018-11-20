@@ -57,6 +57,16 @@ nav .dropdown:hover .dropmenu {
   width: 85%;
   background-color: var(--menu-bg);
 }
+.dropmenu ul:first-child {
+  flex: 0 0 25%;
+}
+.dropmenu ul:nth-child(2) {
+  flex: 0 0 25%;
+}
+.dropmenu .bg-img {
+  flex: 0 0 50%;
+  background-image: url();
+}
 .dropmenu li {
   display: block;
   padding: 2rem 0 2rem 0;
