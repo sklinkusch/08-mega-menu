@@ -65,7 +65,9 @@ nav .dropdown:hover .dropmenu {
 }
 .dropmenu .bg-img {
   flex: 0 0 50%;
-  background-image: url();
+  background-image: url(../img/photo-1542295520-42801e81eba7.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .dropmenu li {
   display: block;
