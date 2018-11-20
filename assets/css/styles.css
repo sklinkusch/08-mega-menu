@@ -18,6 +18,15 @@ header {
   background-color: var(--header-bg);
   color: var(--header-fg);
   margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  flex: 0 0 20%;
+  text-align: center;
+}
+header nav {
+  flex: 0 0 50%;
 }
 nav li {
   display: inline-block;
@@ -28,7 +37,9 @@ nav a {
   color: var(--header-fg);
 }
 main {
-  margin: 0 15px 25px 15px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 main p {
   margin-bottom: 10px;
@@ -36,6 +47,14 @@ main p {
 footer {
   background-color: var(--header-bg);
   color: var(--header-fg);
+  display: flex;
+  justify-content: space-between;
+}
+footer .copyright {
+  margin-left: 6ch;
+}
+footer .impressum {
+  margin-right: 6ch;
 }
 footer a {
   text-decoration: none;
