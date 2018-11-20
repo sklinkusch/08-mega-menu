@@ -4,6 +4,8 @@
   --header-bg: red;
   --header-fg: white;
   --main-bg: antiquewhite;
+  --menu-bg: white;
+  --menu-fg: black;
 }
 /* Remove browser settings */
 *{
@@ -59,4 +61,8 @@ footer .impressum {
 footer a {
   text-decoration: none;
   color: var(--header-fg);
+}
+.dropmenu {
+  display: none;
+  background-color: var(--menu-bg);
 }
