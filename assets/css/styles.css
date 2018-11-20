@@ -13,6 +13,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Some basic settings */
 body {
   background-color: var(--main-bg);
 }
@@ -54,7 +55,10 @@ footer a {
   text-decoration: none;
   color: var(--header-fg);
 }
+/* Media queries */
+/* First the desktop version */
 @media screen and (min-width: 769px) {
+  /* Header with horizontal navigation bar */
   header {
     display: flex;
     flex-direction: row;
@@ -75,15 +79,14 @@ footer a {
     text-decoration: none;
     color: var(--header-fg);
   }
-  nav .dropdown: {
-    padding: 20px;
-  }
+  /* Right behaviour of the dropdown menu */
   nav .dropmenu {
     display: none;
   }
   nav .dropmenu:active, nav .dropdown:hover .dropmenu {
     display: flex;
   }
+/* Styling and positioning of the dropdown menu */
   .dropmenu {
     position: absolute;
     top: 40px;
@@ -109,14 +112,50 @@ footer a {
     text-decoration: none;
     color: var(--menu-fg);
   }
+  /* Width of the main content */
   main {
     width: 750px;
   }
 }
+/* Tablet version */
 @media screen and (max-width: 768px) and (min-width: 568px) {
+  /* Header with items organized vertically */
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  header h1 {
+    flex: 0 0 1.4em;
+  }
+  header > nav {
+    flex: 0 0 2.6em;
+  }
+  header > nav > ul > li {
+    display: block;
+  }
+  /* Dropdown menu inside the header and without image */
+  .dropmenu {
+    background-color: var(--header-bg);
+  }
+  .dropmenu .bg-img {
+    display: none;
+  }
+  /* A little indentation for the dropdown items */
+  .dropmenu li {
+    list-style-type: none;
+    position: relative;
+    left: 2ch;
+  }
+  /* Width of the main content */
   main {
     width: 550px;
   }
+}
+/* Phone version */
+@media screen and (max-width: 567px) {
+  /* Header with items organized vertically */
   header {
     flex-direction: column;
     justify-content: flex-start;
@@ -132,46 +171,21 @@ footer a {
   header > nav > ul > li {
     display: block;
   }
+  /* Dropdown menu inside the header and without image */
   .dropmenu {
     background-color: var(--header-bg);
   }
   .dropmenu .bg-img {
     display: none;
   }
+  /* A little indentation for the dropdown items */
   .dropmenu li {
     list-style-type: none;
     position: relative;
     left: 2ch;
   }
-}
-@media screen and (max-width: 567px) {
+  /* Width of the main content */
   main {
     width: 90%;
-  }
-  header {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 40px;
-  }
-  header h1 {
-    flex: 0 0 1.4em;
-  }
-  header > nav {
-    flex: 0 0 2.6em;
-  }
-  header > nav > ul > li {
-    display: block;
-  }
-  .dropmenu {
-    background-color: var(--header-bg);
-  }
-  .dropmenu .bg-img {
-    display: none;
-  }
-  .dropmenu li {
-    list-style-type: none;
-    position: relative;
-    left: 2ch;
   }
 }
